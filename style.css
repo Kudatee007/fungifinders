@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* color */
+:root {
+  --brown-1: rgba(66, 61, 60, 100%);
+  --brown-2: #383231;
+  --brown-3: #2d2726;
+  --brown-4: #292424;
+  --brown-5: rgba(34, 30, 30, 100%);
+  --primary: #f59c5c;
+  -primary-light: #f7b687;
+  --white: #ffffff;
+  --gray: #cbc9c9;
+  --accent-light: #659477;
+  --accent: #3b8256;
+  --accent-dark: #23412f;
+  --red: #7e3e3f;
+  --burnt-orange: #875c36;
+  --teal: #377e86;
+}
+/* reusable classes */
+.txt-sm {
+  font-size: 14px;
+}
+.txt-rg {
+  font-size: 16px;
+}
+.txt-md {
+  font-size: clamp(18px, 8vw, 20px);
+}
+.txt-lg {
+  font-size: clamp(20px, 8vw, 24px);
+}
+.txt-hd {
+  font-size: clamp(24px, 8vw, 32px);
+}
+.txt-sh {
+  font-size: clamp(36px, 8vw, 48px);
+}
+.txt-tm {
+  font-size: clamp(60px, 8vw, 80px);
+}
+.txt-tl {
+  font-size: 120px;
+}
+/* buttons */
+.btn-sm-dark {
+  width: 114px;
+  height: 34px;
+  border: none;
+  background-color: var(--accent);
+}
+.btn-sm-light {
+  width: 114px;
+  height: 34px;
+  border: none;
+  background-color: var(--accent-light);
+}
+.btn-lg-dark {
+  width: 150px;
+  height: 38px;
+  border: none;
+  background-color: var(--accent);
+}
+.btn-lg-light {
+  width: 150px;
+  height: 38px;
+  border: none;
+  background-color: var(--accent-light);
+}
