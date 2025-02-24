@@ -94,6 +94,7 @@ html {
 /* texts */
 .text-sm {
   font-size: 14px;
+  font-family: sans-serif;
 }
 .text-rg {
   font-size: 16px;
@@ -112,7 +113,6 @@ html {
 }
 .text-sh {
   font-size: clamp(36px, 6vw, 48px);
-  /* line-height: 55px; */
 }
 .text-tm {
   font-size: clamp(60px, 8vw, 80px);
@@ -139,26 +139,8 @@ html {
 .pb-6 {
   padding-bottom: 60px;
 }
-.pt-1 {
-  padding-top: 12px;
-}
-.pt-2 {
-  padding-top: 16px;
-}
-.pt-3 {
-  padding-top: 24px;
-}
-.pt-4 {
-  padding-top: 32px;
-}
-.pt-5 {
-  padding-top: 48px;
-}
-.pt-6 {
-  padding-top: 60px;
-}
-/* buttons */
-.btn-sm-dark {
+/* button */
+.btn {
   padding: 4px 16px;
   height: 36px;
   border: none;
@@ -168,30 +150,14 @@ html {
   font-size: 16px;
   cursor: pointer;
 }
-.btn-sm-light {
-  width: 114px;
-  height: 34px;
-  border: none;
-  background-color: var(--accent-light);
-}
-.btn-lg-dark {
-  width: 150px;
-  height: 38px;
-  border: none;
-  background-color: var(--accent);
-}
-.btn-lg-light {
-  width: 150px;
-  height: 38px;
-  border: none;
-  background-color: var(--accent-light);
-}
 .nav-header {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   background-color: var(--brown-3);
   padding: 16px;
 }
-.nav-links  {
+.nav-links {
   display: none;
 }
 .nav-links.active {
@@ -206,8 +172,6 @@ html {
   width: 246px;
   height: 274px;
   padding: 32px;
-  /* transition: height 0.2s cubic-bezier(0.075, 0.885, 0.32, 1.275); */
-  /* overflow: hidden; */
 }
 .line {
   border: none;
@@ -222,7 +186,6 @@ html {
   background-image: url(./images/heroBg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 100vh; */
   height: auto;
   text-align: center;
   padding-left: 20px;
@@ -263,6 +226,14 @@ html {
 .nature-connect {
   background-color: var(--brown-3);
   padding: 60px 20px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nature-connect div {
+  flex: 1;
 }
 .footer {
   background-color: var(--brown-3);
@@ -279,6 +250,100 @@ html {
 .foraging-adventure p {
   max-width: 900px;
   margin: 0 auto;
+}
+/* guide page */
+.foraging-location {
+  background-color: var(--brown-5);
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.foraging-location div {
+  flex: 1;
+}
+.location-img {
+  width: 100%;
+  max-width: 541px;
+}
+.mushroom-guide {
+  background-color: var(--brown-3);
+  padding: 60px 20px;
+}
+.season-filter {
+  background-color: var(--accent);
+  padding: 3px 5px;
+  border: none;
+  border-radius: 2px;
+}
+.mushroom-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 15px;
+}
+.mushroom-guide-card {
+  background-color: var(--brown-2);
+  padding: 10px;
+  border-radius: 5px;
+}
+.important-text {
+  background-color: var(--brown-1);
+  padding: 10px;
+  width: 100%;
+}
+.mushroom-summer {
+  background-color: var(--accent);
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+.mushroom-edible {
+  background-color: var(--accent);
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+.mushroom-spring {
+  background-color: var(--teal);
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+.mushroom-toxic {
+  background-color: var(--red);
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+.mushroom-fall {
+  background-color: var(--burnt-orange);
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+.filters {
+  display: flex;
+  gap: 10px;
+}
+.span-box {
+  display: flex;
+  gap: 8px;
+}
+.faq-section {
+  background-color: var(--brown-5);
+  padding: 60px 20px;
+}
+.faq-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.faq-image {
+  width: 100%;
+  height: auto;
+}
+.faq-item {
+  background-color: var(--brown-2);
+  padding: 16px;
+  border-radius: 16px;
 }
 @media (min-width: 540px) {
   .hero-section {
@@ -298,6 +363,12 @@ html {
     padding-left: clamp(16px, 4vw, 48px);
     padding-right: clamp(16px, 4vw, 48px);
   }
+  .faq-section {
+    padding: 60px 40px;
+  }
+  .mushroom-guide {
+    padding: 60px 40px;
+  }
 }
 @media (min-width: 768px) {
   .hero-section {
@@ -305,7 +376,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 92vh;
   }
   .hamburger {
     display: none;
@@ -324,9 +395,26 @@ html {
     font-size: 20px;
     color: var(--gray);
   }
-.nav-links.active {
-  height: 0;
-}
+  .nav-links.active {
+    height: 0;
+  }
+  .faq-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .foraging-location {
+    background-color: var(--accent-dark);
+    padding: 60px 150px;
+    gap: 40px;
+  }
+  .hero-section {
+    background-image: url(./images/heroBgLarge.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .nature-connect {
+   flex-direction: row;
+  }
 }
 @media (min-width: 1024px) {
   .mushroom-info {
@@ -339,22 +427,38 @@ html {
   .mushroom-info div {
     flex: 1;
   }
-  .nature-connect {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-  }
-  .nature-connect div {
-    flex: 1;
-  }
   .mushroom-box {
     padding: 60px 150px;
+  }
+  .foraging-location {
+    flex-direction: row;
   }
   .foraging-adventure {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .mushroom-guide {
+    padding: 60px 150px;
+  }
+  .faq-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  .faq-item:nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq-image {
+    height: auto;
+  }
+  .faq-item:nth-child(4) {
+    grid-column: 3;
+    grid-row: 1 / span 2;
   }
 }
