@@ -1,3 +1,5 @@
+/* importing google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Outfit:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -94,31 +96,59 @@ html {
 /* texts */
 .text-sm {
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .text-rg {
   font-size: 16px;
   line-height: 25px;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .text-md {
   font-size: clamp(18px, 4vw, 20px);
   line-height: 25px;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .text-lg {
   font-size: clamp(20px, 4vw, 24px);
   line-height: 30px;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .text-hd {
   font-size: clamp(24px, 4vw, 32px);
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .text-sh {
   font-size: clamp(36px, 6vw, 48px);
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .text-tm {
   font-size: clamp(60px, 8vw, 80px);
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .text-tl {
   font-size: 120px;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 /* padding utilities */
 .pb-1 {
